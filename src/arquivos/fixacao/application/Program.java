@@ -25,10 +25,7 @@ public class Program {
 		new File(targetPath1 + "\\out").mkdir();
 		
 		List<Product> list = new ArrayList<>();
-		/* List<String> lines = new ArrayList<>(); */
-		
-		
-		
+				
 		try(BufferedReader br = new BufferedReader(new FileReader(path))){
 			String line = br.readLine();
 			while (line != null) {
