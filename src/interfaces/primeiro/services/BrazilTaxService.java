@@ -1,10 +1,9 @@
 package interfaces.primeiro.services;
 
-public class  BrazilTaxService {
-	public BrazilTaxService() {
-	}
+public class  BrazilTaxService implements TaxService{
 	
-	public Double tax(Double amount) {
+	
+	public double tax(double amount) {
 		if(amount <= 100) {
 			return amount * 0.2;
 		} else {
