@@ -3,14 +3,14 @@ package generics.primeiroex;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
-	private List<Integer> list = new ArrayList<Integer>();
+public class PrintService <T>{
+	private List<T> list = new ArrayList<>();
 	
-	public void addValue(Integer value) {
+	public void addValue(T value) {
 		list.add(value);
 	}
 	
-	public Integer firts() {
+	public T firts() {
 		if(list.isEmpty()) {
 			throw new IllegalStateException("List is empty");
 		}

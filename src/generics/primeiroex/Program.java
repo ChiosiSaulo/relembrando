@@ -9,16 +9,17 @@ public class Program {
 		System.out.print("How many values? ");
 		int n = sc.nextInt();
 		
-		PrintService service = new PrintService();
+		PrintService<Integer> ps = new PrintService<Integer>();
 		
 		for (int i = 0; i < n; i++) {
-			int value = sc.nextInt();
-			service.addValue(value);
+			Integer value = sc.nextInt();
+			ps.addValue(value);
 		}
 		
-		service.print();
+		ps.print();
+		Integer x = ps.firts();
 		
-		System.out.println("First: " + service.firts());
+		System.out.println("First: " + x);
 		
 		
 		sc.close();
